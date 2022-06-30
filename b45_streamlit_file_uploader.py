@@ -10,7 +10,7 @@ file_name = ''
 file = st.file_uploader('Choose a file')
 versions = st.text_input('Versions')
 links = st.text_area('Links')
-button = st.button('Build File')
+button = st.button('Build file')
 
 
 links = links.split(', ')
