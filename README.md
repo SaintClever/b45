@@ -2,10 +2,10 @@
 
 ## Application used to duplicate multiple HTML files with difference links, words, etc.
 
-[https://saintclever-b45-b45-streamlit-file-uploader-4587qx.streamlitapp.com/](https://saintclever-b45-b45-streamlit-file-uploader-4587qx.streamlitapp.com/)
+## [https://saintclever-b45-b45-streamlit-file-uploader-2p6i3m.streamlitapp.com/](https://saintclever-b45-b45-streamlit-file-uploader-2p6i3m.streamlitapp.com/)
 
 
-![b45](assets/b45.png)
+![b45](assets/b45.gif)
 
 
 ### Instructions
