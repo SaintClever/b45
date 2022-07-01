@@ -9,6 +9,7 @@ st.header('{B45}')
 st.write('Replacement keyword: {B45}')
 st.write('---')
 
+
 data = ''
 file_name = ''
 
@@ -44,8 +45,8 @@ try:
                 with open(f'{file_name} - {versions[i]}.html', 'w') as f:
                     f.write(data)
                     st.write(f'{file_name} - {versions[i]}.html')
-                    components.html(data)
-                    st.write(data)
+                    components.html(data, height=350, scrolling=True)
+                    st.markdown(f'```{data}```') # Display html with markdown
                     st.write('---')
 
             # streamlit success notification
