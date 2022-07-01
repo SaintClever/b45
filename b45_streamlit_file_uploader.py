@@ -44,9 +44,9 @@ try:
                 
                 with open(f'{file_name} - {versions[i]}.html', 'w') as f:
                     f.write(data)
-                    st.write(f'{file_name} - {versions[i]}.html')
                     components.html(data, height=350, scrolling=True)
-                    st.markdown(f'```{data}```') # Display html with markdown
+                    st.write(f'{file_name} - {versions[i]}.html')
+                    st.markdown(f'```html{data}```') # Display html with markdown
                     st.write('---')
 
             # streamlit success notification
