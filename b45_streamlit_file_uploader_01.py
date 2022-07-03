@@ -36,7 +36,6 @@ with st.sidebar:
                 st.error('no links found')
 
 
-
 # main:
 for i in data:
     # print(i['file'].getvalue(), i['links'], i['versions'])
@@ -49,9 +48,10 @@ for i in data:
             with open(f'{file_name} - {versions[j]}.html', 'w') as f:
                 html = html_decoded.replace('{B45}', links[j])
                 f.write(html)
+                
                 st.write(f'{file_name} - {versions[j]}.html')
                 components.html(html, height=350, scrolling=True)
-                st.code(html) # Display html with markdown
+                st.code(html)
                 st.write('---')
         except IndexError:
             st.error('index error')
