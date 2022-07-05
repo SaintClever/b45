@@ -11,7 +11,7 @@
 ### Instructions
 - Paste in the provided replacement keyword **{B45}** in your html file... ex:
     - `<h1>Hello from {B45}<h1>`
-    - `<a href="{B45}"></a>`<br><br>
+    - `<a href="{B45}">{B45}</a>`<br><br>
 
 
 - Upload your html file<br><br>
@@ -29,15 +29,15 @@
 - The output
     - file - A.html
     - `<h1>Hello from http://streamlit.io<h1>`
-    - `<a href="http://streamlit.io"></a>`<br><br>
+    - `<a href="http://streamlit.io">http://streamlit.io</a>`<br><br>
 
     - file - B.html
     - `<h1>Hello from http://stackoverflow.com<h1>`
-    - `<a href="http://stackoverflow.com"></a>`<br><br>
+    - `<a href="http://stackoverflow.com">http://stackoverflow.com</a>`<br><br>
     
     - file - C.html
     - `<h1>Hello from http://stackoverflow.com<h1>`
-    - `<a href="http://stackoverflow.com"></a>`<br><br>
+    - `<a href="http://stackoverflow.com">http://stackoverflow.com</a>`<br><br>
 
 
 ### NOTE: The number of links should match the number of file versions
