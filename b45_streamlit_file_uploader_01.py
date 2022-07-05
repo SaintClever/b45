@@ -47,11 +47,12 @@ for i in data:
         try:
             with open(f'{file_name} - {versions[j]}.html', 'w') as f:
                 html = html_decoded.replace('{B45}', links[j])
-                f.write(html)
-                
+    
                 st.write(f'{file_name} - {versions[j]}.html')
                 components.html(html, height=350, scrolling=True)
                 st.code(html)
                 st.write('---')
+
+                f.write(html)
         except IndexError:
             st.error('index error')
