@@ -78,13 +78,18 @@ if data:
 
         for i in links:
             links_index = links.index(i)
-            with open(f'{links_index} - {versions[links_index]}.html', 'w') as f:
-                html = html_decoded.replace('{B45}', links[links_index])
-                st.write(f'{links_index} - {versions[links_index]}.html')
-                components.html(html, height=350, scrolling=True)
-                st.code(html)
-                st.write('---')
-                f.write(html)
+
+            try:
+                with open(f'{links_index} - {versions[links_index]}.html', 'w') as f:
+                    html = html_decoded.replace('{B45}', links[links_index])
+                    st.write(f'{links_index} - {versions[links_index]}.html')
+                    components.html(html, height=350, scrolling=True)
+                    st.code(html)
+                    st.write('---')
+                    f.write(html)
+            except IndexError:
+                # st.warning('version count is not equivalent to link count')
+                pass
 
 
     elif links[0] != '':
